@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+
+/* selector (puede ser una etiqueta/una clase/ un id) - propiedad - valor*/
+
+header{
+    background-color: rgb(194, 124, 206);
+    height: 5cm;
+
+}
+
+ul li{
+    list-style-type: none;
+
+}
+
+p{
+    color:rgb(215, 37, 97);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.parrafito{
+    color: rgb(31, 151, 61)
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+nav ul li a{
+    text-decoration:none ;
+    color:black;
+    font-size: 1cm;
+    font-family: 'Quicksand', sans-serif;
+
+}
