@@ -8,7 +8,8 @@
 
 header{
     background-color: rgb(194, 124, 206);
-    height: 5cm;
+    
+  
 
 }
 
@@ -22,7 +23,7 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.parrafito{
+.parrafoSegundo{
     color: rgb(31, 151, 61)
 }
 
@@ -38,3 +39,351 @@ nav ul li a{
     font-family: 'Quicksand', sans-serif;
 
 }
+
+/*footer{
+ background-color: rgb(194, 124, 206);
+
+}
+footer h3{
+    color:blue;
+}
+
+.subtituloMarca{
+    color:aqua
+}*/
+
+
+/* servicios */
+
+/*.formula {
+    display:flex;
+    justify-content: end;
+}*/
+
+/*nav{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li a{
+    margin: 1cm;
+}
+
+/*.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ 
+    margin-top: 25px;
+}
+
+.video {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 20px;
+}*/
+
+
+/* servicios */
+
+/*.formula{
+  display:flex;
+   justify-content: end;
+
+}*/
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li a{
+    margin:1cm;
+}
+/*
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+img{
+    border: 4px solid black;
+
+}*/
+
+/* contenedor padre: grilla y dentro voy a acomodar a los hijos */
+/*.grilla{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "galeria galeria galeria galeria"
+    "footer footer footer footer"
+}
+
+/* declaro las áreas para acomodarlas en mi grilla */
+/*.header{
+    grid-area: header;
+}
+
+
+.galeria-grid{
+    grid-area: galeria;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* hijos */
+/*.padre{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    justify-content:center;
+    height: 800px;
+    align-content: end;
+    
+
+}
+img{
+    border: 4px solid black;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+
+}
+
+footer{
+    background-color: violet;
+    color: black;
+}
+.footerPadre{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    justify-items:stretch;
+    align-items: center ;
+  
+    height: 200px;
+    width: auto;
+    
+
+
+}
+.hijo1{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-self:center;
+    align-self:start;
+}*/
+
+
+
+/* para definir filas y columnas indicar valor de medida */
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr  ;
+    grid-template-areas: 
+    "header header header header"
+    "galeria galeria galeria galeria"
+     "footer footer footer footer "
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+.galeria-grid{
+    grid-area: galeria;
+    background-color: blue;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: aqua;
+}
+
+img{
+    border: 5px solid white;
+    width: 400px;
+    height: 300px;
+    margin-top: 15px;
+}
+
+/*hijos*/
+.padre{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 1100px;
+    justify-content: center;
+    align-items:end ;
+    gap:15px;
+
+
+
+}
+
+/*.gradiente {
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(#ff9a9e 0%, #b6ffd4 99%, #768099 50% );
+}*/
+
+.box{
+    border-radius: 6px;
+    width: 80px;
+    height: 40px;
+    margin:60px auto;
+}
+
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: coral;
+}
+
+/* primero: transformación de un elemento
+luego le voy a aplicar una transición */
+
+.box:hover{
+    transform: scale(4);
+}
+
+.box2{
+    transition-property: all;
+    transition-duration: 2s;
+    /* abreviación
+    transition: all 2s */
+}
+
+/* circulos */
+
+.circle1, .circle2, .circle3, .circle4, .circle5{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin:25px;
+}
+
+.circle1{
+    background-color: chocolate;
+    transition: all 2s ease;
+}
+.circle2{
+    background-color: cornflowerblue;
+    transition: all 2s ease-in;
+}
+.circle3{
+    background-color: crimson;
+    transition: all 1s ease-in-out;
+}
+.circle4{
+    background-color: gold;
+    transition: all 5s ease-out;
+}
+.circle5{
+    background-color: forestgreen;
+    transition: all 3s step-start;
+
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(200px);
+}
+/* cuadrado */
+
+/*.square1, .square2{
+    border-radius: 6px;
+    width: 150px;
+    height: 150px;
+    margin:100px;
+    position:absolute;
+}
+
+.square1{
+    background-color: blueviolet;
+}
+
+.square2{
+    background-color: crimson;
+    transition: all 3s;
+}
+
+.square2:hover{
+    transform:translate(150px, 150px)
+}
+
+.combinado{
+    background-color: blueviolet;
+    height: 75px;
+    width: 75px;
+    margin: 15px auto;
+    transition: all 2s;
+}
+
+.combinado:hover{
+    transform: rotate(-90deg) scale(3) translateX(80px)
+}*/
+
+/*img{
+    margin:60px auto;
+}
+img:hover{
+    animation: messi 5s;
+   
+}
+
+@keyframes messi{
+    0%{
+        border-radius: 50%;
+       
+    }
+  
+    50%{
+        transform: translateX(300px);
+    }
+    75%{
+        transform:translateY(300px) ;
+}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
