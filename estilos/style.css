@@ -6,7 +6,7 @@
 
 /* selector (puede ser una etiqueta/una clase/ un id) - propiedad - valor*/
 
-header{
+/*header{
     background-color: rgb(194, 124, 206);
     
   
@@ -99,7 +99,7 @@ ul li a{
 
 }*/
 
-nav{
+/*nav{
     display: flex;
     align-items: center;
     margin-top: 0px;
@@ -199,7 +199,7 @@ footer{
 
 
 /* para definir filas y columnas indicar valor de medida */
-.grilla{
+/*.grilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 4fr 1fr  ;
@@ -231,7 +231,7 @@ img{
 }
 
 /*hijos*/
-.padre{
+/*.padre{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -250,7 +250,7 @@ img{
     background-image: radial-gradient(#ff9a9e 0%, #b6ffd4 99%, #768099 50% );
 }*/
 
-.box{
+/*.box{
     border-radius: 6px;
     width: 80px;
     height: 40px;
@@ -268,7 +268,7 @@ img{
 /* primero: transformación de un elemento
 luego le voy a aplicar una transición */
 
-.box:hover{
+/*.box:hover{
     transform: scale(4);
 }
 
@@ -277,11 +277,10 @@ luego le voy a aplicar una transición */
     transition-duration: 2s;
     /* abreviación
     transition: all 2s */
-}
 
 /* circulos */
 
-.circle1, .circle2, .circle3, .circle4, .circle5{
+/*.circle1, .circle2, .circle3, .circle4, .circle5{
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -373,6 +372,14 @@ img:hover{
         transform:translateY(300px) ;
 }
 }*/
+
+/*h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}*/
+
+.violet{
+    background-color: violet;
+}
 
 
 
